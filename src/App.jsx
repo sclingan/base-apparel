@@ -23,8 +23,9 @@ function App() {
        <p>Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
       <form>
-        <input type='email'placeholder='Email Address'></input>
-        <div className='icon'><img src={icon} alt=""></img></div>
+        <input type='email' placeholder='Email Address'>
+        </input>
+        <button type='submit' className='icon'><img src={icon} alt=""></img></button>
       </form>
      </main>
     </div>
