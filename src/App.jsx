@@ -25,7 +25,7 @@ function App() {
       <form>
         <input type='email' placeholder='Email Address'>
         </input>
-        <button type='submit' className='icon'><img src={icon} alt=""></img></button>
+        <button type='submit' className='icon' aria-describedby='submit email address'><img src={icon} alt=""></img></button>
       </form>
      </main>
     </div>

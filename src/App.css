@@ -54,9 +54,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* TODO:
-   fix icon size
    fix placeholder text
-   fix gradient on button
    check for accessibility
 */
 
@@ -73,6 +71,7 @@ body {
   background-color: hsl(0, 0%, 100%);
   max-width: 374px;
   text-align: center;
+  padding-bottom: 3rem;
 }
 
 header {
@@ -99,7 +98,7 @@ h1 {
 span {
   color: var(--desat-red);
   font-weight: var(--fw-300);
-  font-size: 3rem;
+  font-size: 2.5rem;
   letter-spacing: 0.7rem;
 }
 
@@ -113,27 +112,27 @@ form {
 }
 
 input {
-  border: 0.1rem solid var(--desat-red);
+  border: 0.1rem solid hsla(0, 36%, 70%, 0.5);
   border-radius: 2rem;
-  padding: 0.8rem 5rem;
+  padding: 0.7rem 9rem 0.7rem 1rem;
 }
 
 ::placeholder {
   color: var(--desat-red);
   font-weight: var(--fw-400);
+  opacity: 0.5;
 }
 
 .icon {
   position: absolute;
   top: 0;
   left: 15.6rem;
-  /* background-color: linear-gradient(hsl(0, 80%, 86%) hsl(0, 74%, 74%)); */
-  background-color: var(--desat-red);
-  border: 0.1rem solid var(--desat-red);
+  background-image: linear-gradient(135deg,/* hsl(0, 0%, 100%), hsl(0, 100%, 98%),*/ hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
   border-radius: 3rem;
-  padding: 0.9rem 1.5rem;
+  padding: 0.9rem 1.6rem;
   max-width: 20%;
-  box-shadow: 0.2rem 0.5rem 1rem var(--desat-red);
+  box-shadow: 0.1rem 0.5rem 3.5rem var(--desat-red);
   cursor: pointer;
 }
 
