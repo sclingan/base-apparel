@@ -4,6 +4,7 @@ import hero from '../public/images/hero-mobile.jpg'
 import heroDesktop from '../public/images/hero-desktop.jpg'
 import logo from '../public/images/logo.svg'
 import icon from '../public/images/icon-arrow.svg'
+import './validate'
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
        <p>Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
       <form>
-        <input type='email' placeholder='Email Address'>
+        <input type='email' placeholder='Email Address' required>
         </input>
         <button type='submit' className='icon' aria-describedby='submit email address'><img src={icon} alt=""></img></button>
       </form>

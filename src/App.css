@@ -54,8 +54,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* TODO:
-   fix placeholder text
    check for accessibility
+   fix border for email
+   fix popup for email error
+   add hidden but accessible !icon
+   add hidden but accessible error msg
 */
 
 body {
@@ -115,6 +118,9 @@ input {
   border: 0.1rem solid hsla(0, 36%, 70%, 0.5);
   border-radius: 2rem;
   padding: 0.7rem 9rem 0.7rem 1rem;
+  color: var(--gray-red);
+  font-weight: var(--fw-400);
+  outline-color: var(--soft-red);
 }
 
 ::placeholder {
@@ -126,13 +132,14 @@ input {
 .icon {
   position: absolute;
   top: 0;
-  left: 15.6rem;
-  background-image: linear-gradient(135deg,/* hsl(0, 0%, 100%), hsl(0, 100%, 98%),*/ hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  /* left: 15.6rem; */
+  left: 16.3rem;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   border: none;
   border-radius: 3rem;
   padding: 0.9rem 1.6rem;
   max-width: 20%;
-  box-shadow: 0.1rem 0.5rem 3.5rem var(--desat-red);
+  box-shadow: 0.1rem 0.8rem 3rem var(--desat-red);
   cursor: pointer;
 }
 
