@@ -1,5 +1,3 @@
-// const email = Array.from(document.getElementsByTagName('input'));
-// console.log(email);
 
 document.addEventListener('invalid', function(e){
     return function(e){
@@ -8,10 +6,16 @@ document.addEventListener('invalid', function(e){
 });
 
 
-const button = document.getElementsByTagName('button');
 
-// button[0].addEventListener('click', function(e){
-//     e.preventDefault();
-//     console.log(e);
-//     // make icon and text apear
-// })
+
+
+export default function submitData(e) {
+    e.preventDefault();
+    const email = document.getElementById('email');
+    console.log(email.innerHTML);
+    const errors = Array.from(document.getElementsByClassName('error-hidden'));
+    errors[0].classList.remove('error-hidden');
+    errors[0].classList.add('error-icon');
+    errors[1].classList.remove('error-hidden')
+    errors[1].classList.add('error');
+}

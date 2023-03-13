@@ -4,7 +4,9 @@ import hero from '../public/images/hero-mobile.jpg'
 import heroDesktop from '../public/images/hero-desktop.jpg'
 import logo from '../public/images/logo.svg'
 import icon from '../public/images/icon-arrow.svg'
+import error from '../public/images/icon-error.svg'
 import './validate'
+import submitData from './validate'
 
 function App() {
 
@@ -24,10 +26,13 @@ function App() {
        <p>Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
       <form>
-        <input type='email' placeholder='Email Address' required>
+        <input type='email' id='email' placeholder='Email Address' required>
         </input>
-        <button type='submit' className='icon' aria-describedby='submit email address'><img src={icon} alt=""></img></button>
+        <img className="error-hidden" srcSet={error}></img>
+        <button type='submit' className='icon' aria-label='submit email address' onClick={submitData}>
+        <img src={icon} alt=""></img></button>
       </form>
+      <p className='error-hidden'>Please provide a valid email</p>
      </main>
     </div>
   )
