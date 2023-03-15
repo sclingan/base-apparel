@@ -17,8 +17,8 @@ function App() {
       <img className='logo' src={logo} alt=""></img>
       </header>
       <picture>
-        <source media="(min-width: 20rem)" srcSet={hero}></source>
-        <source media="(max-width: 20rem)" srcSet={heroDesktop}></source>
+        <source media="(max-width: 37.5rem)" srcSet={hero}></source>
+        <source media="(min-width: 37.5rem)" srcSet={heroDesktop}></source>
         <img src={heroDesktop} alt=""></img>
       </picture>
       <main>
