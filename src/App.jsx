@@ -12,7 +12,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* move header to another component? */}
      <header>
       <img className='logo' src={logo} alt=""></img>
       </header>

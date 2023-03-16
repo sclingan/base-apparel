@@ -61,7 +61,6 @@ p, h1, h2, h3, h4, h5, h6 {
 */
 
 body {
-  background-color: hsl(0, 14%, 86%);
   font-family: var(--ff);
   font-weight: var(--fw-300);
   font-size: var(--font-size);
@@ -70,8 +69,7 @@ body {
 }
 
 .App {
-  background-color: hsl(0, 39%, 93%);
-  /* max-width: 374px; */
+  background-color: hsl(0, 28%, 95%);
   max-width: 370px;
   text-align: center;
   padding-bottom: 3rem;
@@ -120,7 +118,7 @@ input {
   border: 0.1rem solid hsla(0, 36%, 70%, 0.5);
   border-radius: 2rem;
   padding: 0.7rem 9rem 0.7rem 1rem;
-  background-color: hsl(0, 39%, 93%);
+  background-color: hsl(0, 28%, 95%);
   color: var(--gray-red);
   font-weight: var(--fw-400);
   outline-color: var(--soft-red);
@@ -168,7 +166,7 @@ input {
   padding-left: 1.8rem;
 }
 
-@media(min-width: /*37.5rem*/ 63.75rem) {
+@media(min-width: 63.75rem) {
 
   body {
     display: flex;
