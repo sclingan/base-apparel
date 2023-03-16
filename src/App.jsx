@@ -17,9 +17,9 @@ function App() {
       <img className='logo' src={logo} alt=""></img>
       </header>
       <picture>
-        <source media="(max-width: 37.5rem)" srcSet={hero}></source>
-        <source media="(min-width: 37.5rem)" srcSet={heroDesktop}></source>
-        <img src={heroDesktop} alt=""></img>
+        <source media="(max-width: 63.75rem)" srcSet={hero}></source>
+        <source media="(min-width: 63.75rem)" srcSet={heroDesktop}></source>
+        <img src={heroDesktop} alt="Dark haired woman standing in front of a plant"></img>
       </picture>
       <main>
        <h1><span>We're</span> coming soon</h1>
@@ -28,9 +28,9 @@ function App() {
       <form>
         <input type='email' id='email' placeholder='Email Address' required>
         </input>
-        <img className="error-hidden" srcSet={error}></img>
+        <img className="error-hidden" srcSet={error} alt=""></img>
         <button type='submit' className='icon' aria-label='submit email address' onClick={submitData}>
-        <img src={icon} alt=""></img></button>
+        <img src={icon} alt="arrow icon"></img></button>
       </form>
       <p className='error-hidden'>Please provide a valid email</p>
      </main>
