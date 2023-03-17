@@ -15,9 +15,16 @@ export default function submitData(e) {
     const email = document.getElementById('email').value;
     const regex = /(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@[*[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+]*/;
     const errors = Array.from(document.getElementsByClassName('error-hidden'));
-    var answer = regex.test(email);
+    let answer = regex.test(email);
     if(answer) {
-        window.location.reload();
+        // If valid email
+        let form = document.getElementById('submit-email');
+        // remove any error messages
+        form.remove(errors);
+        // show confirmation message on success
+        const confirm = document.getElementById('confirm');
+        confirm.classList.remove('confirm-hidden');
+        confirm.classList.add('confirmation');
       
     } else {
         // show error icon and alert for invalid email

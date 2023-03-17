@@ -164,6 +164,20 @@ input {
   padding-left: 1.8rem;
 }
 
+.confirm-hidden {
+  position: absolute;
+  top: 0;
+  left: 19999999rem;
+  height: 1px;
+  width: 1px;
+}
+
+.confirmation {
+  padding-top: 2rem;
+  color: var(--gray-red);
+  font-weight: var(--fw-600);
+}
+
 @media(min-width: 63.75rem) {
 
   body {

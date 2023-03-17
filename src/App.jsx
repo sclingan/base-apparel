@@ -25,15 +25,22 @@ function App() {
        <h1><span>We're</span> coming soon</h1>
        <p>Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
-      <form>
+      <form id='submit-email'>
         <input type='email' id='email' placeholder='Email Address' 
         aria-required="true" required>
         </input>
         <img className="error-hidden" srcSet={error} alt=""></img>
         <button type='submit' className='icon' aria-label='submit email address' onClick={submitData}>
+          {/* show error message on invalid email */}
         <img src={icon} alt="arrow icon"></img></button>
-      </form>
+      {/* show error alert on invalid email  */}
       <p className='error-hidden' role="alert">Please provide a valid email</p>
+      </form>
+      {/* show confirmation message on valid submit  */}
+      <div className='confirm-hidden' id='confirm'>
+        <h3>Thank you!</h3>
+        <p>Your Email has been added.</p>
+      </div>
      </main>
     </div>
   )
