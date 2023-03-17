@@ -38,7 +38,7 @@ function App() {
       </form>
       {/* show confirmation message on valid submit  */}
       <div className='confirm-hidden' id='confirm'>
-        <h3>Thank you!</h3>
+        <h2>Thank you!</h2>
         <p>Your Email has been added.</p>
       </div>
      </main>
