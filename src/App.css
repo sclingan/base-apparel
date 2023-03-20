@@ -53,10 +53,6 @@ p, h1, h2, h3, h4, h5, h6 {
   --font-size: 1rem;
 }
 
-/* TODO:
-   fix media queries < 360px
-*/
-
 body {
   font-family: var(--ff);
   font-weight: var(--fw-300);
@@ -234,8 +230,10 @@ input {
   }
 
   .icon {
-    left: 13rem;
-    padding: 0.7rem 1.6rem; 
+    left: clamp(12rem, 13rem, 14rem);
+    padding: 0.8rem 1.6rem; 
+    max-height: 2.5rem;
+    min-width: 3.75rem;
   }
 
   .error-icon {
