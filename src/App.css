@@ -54,6 +54,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--ff);
   font-weight: var(--fw-300);
   font-size: var(--font-size);
