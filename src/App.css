@@ -54,24 +54,21 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  position: relative;
   font-family: var(--ff);
   font-weight: var(--fw-300);
   font-size: var(--font-size);
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 .App {
+  display: flex;
+  flex-direction: column;
   background-color: hsl(0, 28%, 95%);
   max-width: 370px;
   text-align: center;
   padding-bottom: 3rem;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 header {
