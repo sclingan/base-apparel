@@ -168,7 +168,7 @@ input {
 .confirm-hidden {
   position: absolute;
   top: 0;
-  left: 19999999rem;
+  left: 1rem;
   height: 1px;
   width: 1px;
 }
